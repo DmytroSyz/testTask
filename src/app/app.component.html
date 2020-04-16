@@ -1,0 +1,87 @@
+<div class="wrapper">
+  <div class="cards-wrapper">
+    <div class="card" *ngFor="let card of data">
+      <div class="card-header">
+        <div class="icon" [style]="{'background': card.gradient}">
+          <img [src]="card.img" alt="">
+        </div>
+        <div class="employees-wrapper">
+          <div class="employees-total">
+            {{card.title}}
+          </div>
+          <div class="employees-count">
+            {{card.count}}
+          </div>
+        </div>
+      </div>
+      <div class="card-line"></div>
+
+      <div class="card-footer">
+        <div class="updated-section">
+          <img src="../assets/img/reload.svg" alt="">
+          <div>
+            just updated
+          </div>
+        </div>
+
+        <div class="more-info-button">
+          <div>
+            MORE INFO
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-wrapper">
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          Employees/Gender
+        </div>
+        <div class="missing-data">
+          Missing Data <span> <img src="../assets/img/ic_arrow.svg" alt=""></span>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <div class="chart">
+          <div class="percent">
+            35%
+          </div>
+          <div class="chart-centre">
+            <div class="chart-figures">
+              <img src="../assets/img/Male.svg" alt="">
+              <img src="../assets/img/Female.svg" alt="">
+            </div>
+          </div>
+          <div class="percent">
+            65%
+          </div>
+        </div>
+      </div>
+
+      <div class="card-line"></div>
+
+      <div class="chart-card-footer">
+        <div class="updated-section">
+          <img src="../assets/img/reload.svg" alt="">
+          <div>
+            just updated
+          </div>
+        </div>
+        <div class="chart-sign-section">
+            <div class="circle female-circle">
+
+            </div>
+
+            Female
+          <div class="circle male-circle">
+
+          </div>
+          Male
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
